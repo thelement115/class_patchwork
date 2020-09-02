@@ -29,14 +29,17 @@
             border: 1px solid black;
             text-align: center;
         }
+        body{
+            overflow-x: hidden;
+        }
     </style>
 
 </head>
-<body style="height: 100vh">
+<body style="height: 100vh" style= "overflow-x: hidden">
     <div id="app"style="height: 100%">
         <nav class="navbar navbar-expand-md navbar-light shadow-sm " style="background-color: #f6c751;  height : 8%">
             <div class="container" style="height: 100%">
-                <img src = "images\logo.png" style = "height: 90%">
+                <img src = "http://localhost/class_patchwork/storage/app/public/logo.jpg" style = "height: 90%">
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
                     <span class="navbar-toggler-icon"></span>
                 </button>
@@ -45,22 +48,16 @@
                     <!-- Left Side Of Navbar -->
                     <ul class="navbar-nav mr-5">
                         <li class = "nav-item ml-4 mr-4" style="color:blue; font-weight:500">
-                            Inicio
+                            <a class="nav-link" style="color:blue; font-weight:500" href="{{ route('home') }}">Inicio</a>
                         </li>
                         <li class = "nav-item mr-4" style="color:blue; font-weight:500">
-                            ¿Quienes somos?
+                            <a class="nav-link" style="color:blue; font-weight:500" href="{{ route('reservations') }}"> ¿Quienes somos?</a>
                         </li>
                         <li class = "nav-item mr-4" style="color:blue; font-weight:500">
-                            Servicios
+                            <a class="nav-link" style="color:blue; font-weight:500" href="{{ route('reservations') }}">Reservas</a>
                         </li>
                         <li class = "nav-item mr-4" style="color:blue; font-weight:500">
-                            Reservas
-                        </li>
-                        <li class = "nav-item mr-4" style="color:blue; font-weight:500">
-                            Ayuda
-                        </li>
-                        <li class = "nav-item mr-2" style="color:blue; font-weight:500">
-                            Contacto
+                            <a class="nav-link" style="color:blue; font-weight:500" href="{{ route('reservations') }}">Ayuda</a>
                         </li>
                     </ul>
                     <!-- Right Side Of Navbar -->
@@ -94,9 +91,32 @@
         </nav>
             @yield('content')
             
-        <div class = "row" style = "height: 10%">
-            <div class = "col-12">
-                Pie de pagina
+        <div class = "row" style = "height: 10%;border-color:blue;border-style:groove;border-left:none;border-right:none;border-bottom:none">
+            <div class = "col-6">
+                <div class = "row">
+                    <div class = "col-12 d-flex justify-content-center mt-4">
+                        Institución Educativa
+                    </div>
+                    <div class = "col-12 d-flex justify-content-center" style="color: green; font-weight: bolder">
+                        Alfredo Cock Arango
+                    </div>
+                    <div class = "col-12 d-flex justify-content-center">
+                        Liderando procesos de formación y calidad humana
+                    </div>
+                </div>
+            </div>
+            <div class = "col-6">
+                <div class = "row">
+                    <div class = "col-12 d-flex justify-content-center mt-4">
+                        www.ieaca.edu.co
+                    </div>
+                    <div class = "col-12 d-flex justify-content-center" style = "">
+                        Barrio Castilla-Carrera 72 No 99-55
+                    </div>
+                    <div class = "col-12 d-flex justify-content-center">
+                        Telefax: 267 11 90 - 267 75 52
+                    </div>
+                </div>
             </div>
         </div>
     </div>

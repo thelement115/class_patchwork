@@ -1,9 +1,9 @@
 @extends('layouts.app')
 
 @section('content')
-<div class="container">
-    <div class="row justify-content-center">
-        <div class="col-md-8">
+<div style="background-color: #f47a62;padding:unset;margin:0;height:80vh">
+    <div class="row justify-content-center d-flex align-items-center" style="height: 100%">
+        <div class="col-md-8 ">
             <div class="card">
                 <div class="card-header">{{ __('Register') }}</div>
 

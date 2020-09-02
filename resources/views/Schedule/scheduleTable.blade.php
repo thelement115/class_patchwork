@@ -2,8 +2,8 @@
 
 @section('table')
 
-<div class = "container mt-4">
-    <table style="width:100%">
+<div class = "container" style = "background-color:  #0ec166">
+    <table style="width:100%;background-color: white">
         <tr>
         <th>Materia</th>
         <th>Profesor</th>
@@ -28,7 +28,7 @@
                         </tr>
                     </table>
                 </th>
-                <th><Input type= "radio"></th>
+                <th style = "width: 10vw"><Input type= "radio"></th>
             </tr>
             @endforeach
     </table>

@@ -1,10 +1,10 @@
 @extends('layouts.app')
 
 @section('content')
-    <div class = "container d-flex justify-content-center mt-4">
-        <form method = "POST" action={{route('reservations_result')}}>
+    <div class = "d-flex justify-content-center" style= "background-color: #0ec166">
+        <form method = "POST" action={{route('reservations_result')}} style = "margin-bottom: 2%">
             @csrf
-            <div class ="row d-flex justify-content-center">
+            <div class ="row d-flex justify-content-center mt-4">
                 <div class = "col d-flex justify-content-center">
                     <select name="subjects" id="subjects">
                         @foreach ($data['subjects'] as $subject)
@@ -20,5 +20,7 @@
             </div>
         </form>
     </div>
-    @yield('table')
+    <div class = "" style = "min-height: 60vh; background-color: #0ec166">
+        @yield('table')
+    </div>
 @endsection
