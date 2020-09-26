@@ -64,10 +64,13 @@
                         </div>
 
                         <div class="form-group row ">
-                            <label for="is_teacher" class="col-md-4 col-form-label text-md-right">{{ __('¿Docente?') }}</label>
-
-                            <div class="col" style = "margin-right: 28vw">
-                                <input id="is_teacher" type="checkbox" class="form-control" name="is_teacher"  value="{{ old('is_teacher') }}" autocomplete="is_teacher" style= "height: 3vh; margin-top:1vh">
+                            <label for="is_teacher" class="col-md-4 col-form-label text-md-right">{{ __('Docente') }}</label>
+                            <div class="col-1">
+                                <input id="is_teacher" type="radio" class="form-control" name="is"  value="Profesor" style= "height: 3vh; margin-top:1vh">
+                            </div>
+                            <label for = "is_student" class = "col-md-4 col-form-label text-md-right">{{ __('Estudiante') }}</label>
+                            <div class="col-1">
+                                <input id="is_student" type="radio" class="form-control" name="is"  value="Estudiante" style= "height: 3vh; margin-top:1vh">
                             </div>
                         </div>
 
@@ -96,7 +99,7 @@
                         <div class="form-group row mb-0">
                             <div class="col-md-6 offset-md-4">
                                 <button type="submit" class="btn btn-primary">
-                                    {{ __('Register') }}
+                                    Registrarse
                                 </button>
                             </div>
                         </div>

@@ -2,7 +2,7 @@
 
 @section('content')
     <div class = "d-flex justify-content-center" style= "background-color: #0ec166">
-        <form method = "POST" action={{route('reservations_result')}} style = "margin-bottom: 2%">
+        <form method = "POST" action={{route('reservations_result')}} style = "margin-bottom: 2%" id = "form1">
             @csrf
             <div class ="row d-flex justify-content-center mt-4">
                 <div class = "col d-flex justify-content-center">

@@ -32,6 +32,10 @@
         body{
             overflow-x: hidden;
         }
+        ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+            color: white;
+            opacity: 1; /* Firefox */
+        }
     </style>
 
 </head>
@@ -51,13 +55,13 @@
                             <a class="nav-link" style="color:blue; font-weight:500" href="{{ route('home') }}">Inicio</a>
                         </li>
                         <li class = "nav-item mr-4" style="color:blue; font-weight:500">
-                            <a class="nav-link" style="color:blue; font-weight:500" href="{{ route('reservations') }}"> ¿Quienes somos?</a>
+                            <a class="nav-link" style="color:blue; font-weight:500" href="{{ route('information') }}"> ¿Quienes somos?</a>
                         </li>
                         <li class = "nav-item mr-4" style="color:blue; font-weight:500">
                             <a class="nav-link" style="color:blue; font-weight:500" href="{{ route('reservations') }}">Reservas</a>
                         </li>
                         <li class = "nav-item mr-4" style="color:blue; font-weight:500">
-                            <a class="nav-link" style="color:blue; font-weight:500" href="{{ route('reservations') }}">Ayuda</a>
+                            <a class="nav-link" style="color:blue; font-weight:500" href="{{ route('contact') }}">Ayuda</a>
                         </li>
                     </ul>
                     <!-- Right Side Of Navbar -->

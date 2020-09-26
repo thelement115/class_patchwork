@@ -68,7 +68,7 @@ class RegisterController extends Controller
     protected function create(array $data)
     {
         $teacher = false;
-        if(array_key_exists('is_teacher',$data)){
+        if ($data['is'] == 'Profesor'){
             $teacher = true;
         }
         return User::create([
