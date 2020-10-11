@@ -19,6 +19,7 @@ class UpdateUsersTable extends Migration
             $table->string('last_name');
             $table->boolean('is_teacher');
         });
+        
     }
 
     /**

@@ -44,4 +44,8 @@ class User extends Authenticatable
     public function getStudentClases(){
         return $this->hasMany('App\userxday');
     }
+
+    public function getEmail(){
+        return $this->attributes['email'];
+    }
 }

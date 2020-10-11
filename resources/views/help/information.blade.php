@@ -37,6 +37,8 @@
             <div class = "col-3">
             </div>
         </div>
+        <!-- Hacer las hojas de vida desde aca -->
+
     </div>
 @endsection
 

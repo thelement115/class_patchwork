@@ -39,9 +39,9 @@
     </style>
 
 </head>
-<body style="height: 100vh" style= "overflow-x: hidden">
+<body style="height: 100vh">
     <div id="app"style="height: 100%">
-        <nav class="navbar navbar-expand-md navbar-light shadow-sm " style="background-color: #f6c751;  height : 8%">
+        <nav class="navbar navbar-expand-md navbar-light shadow-sm" style="background-color: #f6c751;  height : 8%">
             <div class="container" style="height: 100%">
                 <img src = "http://localhost/class_patchwork/storage/app/public/logo.jpg" style = "height: 90%">
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
@@ -62,6 +62,9 @@
                         </li>
                         <li class = "nav-item mr-4" style="color:blue; font-weight:500">
                             <a class="nav-link" style="color:blue; font-weight:500" href="{{ route('contact') }}">Ayuda</a>
+                        </li>
+                        <li class = "nav-item mr-4" style="color:blue; font-weight:500">
+                            <a class="nav-link" style="color:blue; font-weight:500" href="{{ route('admin_panel') }}">Cuenta</a>
                         </li>
                     </ul>
                     <!-- Right Side Of Navbar -->
@@ -94,8 +97,7 @@
             </div>
         </nav>
             @yield('content')
-            
-        <div class = "row" style = "height: 10%;border-color:blue;border-style:groove;border-left:none;border-right:none;border-bottom:none">
+        <div class = "row" id= "pieDePagina" style = "height: 10%;border-color:blue;border-style:groove;border-left:none;border-right:none;border-bottom:none">
             <div class = "col-6">
                 <div class = "row">
                     <div class = "col-12 d-flex justify-content-center mt-4">

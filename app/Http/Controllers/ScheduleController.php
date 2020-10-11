@@ -60,10 +60,8 @@ class ScheduleController extends Controller
             $user= Auth::id();
             $subjects = Subject::all();
             $data['subjects'] = $subjects;
-            $data['subjects'] = $subjects;
             $exists = userxday::where([['user_id',$user],['day_id',$day]])->first();
             if ($exists) {
-                echo $exists;
                 $data['msg'] = "Horario ya seleccionado";
             }else{
                 $selected = new userxday;

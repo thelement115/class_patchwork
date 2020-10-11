@@ -38,7 +38,7 @@
                     </div>
                     <div class = "row d-flex justify-content-center mb-4">
                         <div class = "col-6 d-flex justify-content-end">
-                            <input type = "text" placeholder="Nombres" style = "background-color: transparent;border-width: 2px;border-color:white;width:80%;height:6vh">    
+                            <input type = "text" placeholder="Nombres" style = "color:white;background-color: transparent;border-width: 2px;border-color:white;width:80%;height:6vh">    
                         </div>
                         <div class = "col-6 d-flex" style="color:white">
                             <input type = "text" placeholder="Apellidos" style = "color:white;background-color: transparent;border-width: 2px;border-color:white;width:80%;height:6vh">    
@@ -46,7 +46,7 @@
                     </div>
                     <div class = "row d-flex justify-content-center mb-4">
                         <div class = "col-6 d-flex justify-content-end">
-                            <input type = "text" placeholder="Telefono" style = "background-color: transparent;border-width: 2px;border-color:white;width:80%;height:6vh">    
+                            <input type = "text" placeholder="Telefono" style = "color:white;background-color: transparent;border-width: 2px;border-color:white;width:80%;height:6vh">    
                         </div>
                         <div class = "col-6 d-flex" style="color:white">
                             <input type = "text" placeholder="Email-Institucional" style = "color:white;background-color: transparent;border-width: 2px;border-color:white;width:80%;height:6vh">    
@@ -54,7 +54,7 @@
                     </div>
                     <div class = "row d-flex justify-content-center mb-4">
                         <div class = "col-12 d-flex justify-content-center">
-                            <input type = "text" placeholder="Escribe tu mensaje aqui" style = "background-color: transparent;border-width: 2px;border-color:white;width:80%;height:11vh">
+                            <input type = "text" placeholder="Escribe tu mensaje aqui" style = "color:white;background-color: transparent;border-width: 2px;border-color:white;width:80%;height:11vh">
                         </div>
                     </div>
                     <div class = "row d-flex justify-content-end">
